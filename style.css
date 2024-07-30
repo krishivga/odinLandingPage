@@ -1,0 +1,201 @@
+/* First, we make all the blocks fit properly and align them with flexbox*/
+body {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+  font-family: Roboto, sans-serif;
+}
+
+section {
+  width: 100vw;
+}
+
+/* Now, we start with the header */
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #1f2937;
+  align-items: center;
+}
+
+/* This unironically took forever to get right */
+/* Credit to Ilama for the logo */
+.header-logo {
+  width: auto;
+  height: 35px;
+}
+
+/* Formatting the links */
+
+.header-links {
+  display: flex;
+  gap: 14px;
+}
+
+.header-links li {
+  list-style-type: none;
+}
+
+.header-links li a {
+  font-size: 16px;
+}
+
+.header-links {
+  font-size: 18px;
+  color: #E5E7EB;
+  text-decoration: none;
+}
+
+/* Now for the main section */
+.main {
+  display: flex;
+  background-color: #1f2937;
+  justify-content: center;
+  padding: 80px 20px;
+  gap: 15px;
+}
+
+.main-text {
+  flex: 0 1 auto;
+  width: 35%;
+}
+
+.main-text h1 {
+  font-size: 36px;
+  font-weight: 900;
+  color: #F9FAF8;
+  margin: 0px;
+}
+
+.main-text p {
+  margin: 0px;
+  margin-bottom: 10px;
+  color: #E5E7EB;
+  font-size: 14px;
+}
+
+.main-img {
+  width: 40%;
+}
+
+.main-text button {
+  border-radius: 7px;
+  background-color: #3882F6;
+  color: #E5E7EB;
+  border: 0;
+}
+
+/* Styling the Info Section */
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F5F5F5;
+  gap: 30px;
+  padding: 80px 20px;
+}
+
+.info h1 {
+  margin: 0px;
+  font-size: 30px;
+  font-weight: 900;
+  color: #1F2937;
+}
+
+.info-card img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.info-card {
+  width: 20%;
+}
+
+.info-cards {
+  display: flex;
+  margin: 0px;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* Styling the quotes section */
+.quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #E5E7EB;
+  padding: 70px 0;
+  gap: 20px;
+}
+
+.quote-text {
+  width: 45%;
+  font-size: 30px;
+  color: #1F2937;
+  font-style: italic;
+  margin: 0;
+}
+
+.quote-credit {
+  font-weight: 1000;
+  margin: 0;
+}
+
+/* CTA Styling */
+.cta-block {
+  display: flex;
+  justify-content: center;
+  padding: 80px;
+}
+
+.cta {
+  display: flex;
+  background-color: #3382F6;
+  padding: 40px 20px;
+  justify-content: space-between;
+  width: 80%;
+  border-radius: 7px;
+}
+
+.cta-text h4,
+.cta-text p {
+  margin: 0px;
+}
+
+.cta-text h4 {
+  font-size: 20px;
+  color: white;
+}
+
+.cta-text p {
+  color: white;
+}
+
+.cta button {
+  background-color: #3382F6;
+  border-radius: 8px;
+  border: 1px white solid;
+  padding: 2px 4px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Styling Footer */
+.footer {
+  background-color: #1F2937;
+  color: white;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.footer p {
+  margin: 0;
+}
